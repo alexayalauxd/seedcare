@@ -528,12 +528,16 @@ section {
   background-repeat: no-repeat;
 }
 
+.orange .text{
+  color: white;
+}
+
 .orange .text-center{
   width: 80%;
 }
 
 .orange .icon-box {
-  padding: 30px;
+  padding: 20px;
   transition: all ease-in-out 0.3s;
   background: #f1f2f6;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
@@ -549,12 +553,12 @@ section {
   margin: auto;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   transition: ease-in-out 0.3s;
 }
 
 .orange .icon-box .icon i {
-  font-size: 28px;
+  font-size: 80px;
 }
 
 .orange .icon-box p {
@@ -602,6 +606,18 @@ section {
 --------------------------------------------------------------*/
 #form{
   background-color: #02a91f;
+  color: white;
+}
+
+#form .tarjet{
+  background-color: white;
+  padding: 40px 20px;
+  color: #282828;
+}
+
+#form .tarjet .icon{
+  color: #005dab;
+  font-size: 28px;
 }
 
 
@@ -611,6 +627,7 @@ section {
 
 #social{
   background-color: #f7701e;
+  color: white;
 }
 
 #social .text-center{
@@ -910,8 +927,7 @@ footer div.container{
 }
 footer div.cont-blue{
   color: white;
-
-  padding: 40px 300px;
+  padding: 40px 50px;
 }
 
 footer div.container div.info-cont{
