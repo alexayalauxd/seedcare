@@ -696,6 +696,9 @@ section {
   font-size: 24px;
   padding: 20px 40px;
 }
+#cta h3{
+  color: white;
+}
 
 /*--------------------------------------------------------------
 # video Section
