@@ -628,14 +628,25 @@ section {
 /*--------------------------------------------------------------
 # Map-section
 --------------------------------------------------------------*/
+#map{
+  background-image: url(../images/map.png);
+  color: #282828;
+}
 #map .card{
   padding: 40px 80px;
   border: none;
 }
-
+#map .card h2{
+  color: #005dab;
+}
 #map img{
   border-radius: 100%;
   width: 8em;
+}
+@media (max-width: 991px) {
+  #map{
+    background-image: none;
+  }
 }
 
 /*--------------------------------------------------------------
