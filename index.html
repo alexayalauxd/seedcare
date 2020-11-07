@@ -7,17 +7,20 @@
   <title>Seedacer</title>
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/images/favicon.png" rel="icon">
+  <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -31,68 +34,66 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-xl-9 d-flex align-items-center justify-content-between">
-          <h1 class="logo"><a href="index.html">Logo</a></h1>
-          <nav class="nav-menu d-none d-lg-block li-black">
+          <img src="./assets/images/bigLogoGreen.png" alt="">
 
+          <nav class="nav-menu d-none d-lg-block li-black">
+            <ul>
+              <li><a>Cruiser Maxx</a></li>
+              <li><a>Cruiser Maxx Vibrance</a></li>
+              <li><a>Contacto</a></li>
+              
+            </ul>
           </nav>
-          <h1 class="logo2"><a href="index.html">Logo</a></h1>
+
+          <img class="logo2" src="./assets/images/lgLogo.png" alt="">
         </div>
       </div>
     </div>
   </header>
 
-
-
-
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('./assets/img/index-hero1.png');">
-            <div class="carousel-container">
-              <div class="col-md-7 carousel-content container">
-                <h1><b>20 años</b> siendo la mejor opción de protección para las semillas</h1>
-                <br>
-                <h2>Vigor y protección de alto espectro.</h2>
-                <br>
-                <a href="#about" class="get-started-btn">Conoce el tratamiento</a>
+  <!-- ======= MainBanner ======= -->
+  <div id="HomeMainContainer" class="main-content">
+    <section id="MainBanner">
+      <div  id="HomeSwipper" class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide fll-bg" style="background-image: url(./assets/images/banner1.png);">
+                  <div class="container">
+                      <div class="slider-infocont">
+                          <h1><b>20 años</b> siendo la mejor opción de protección para las semillas</h1>
+                          <br>
+                          <h2>Vigor y protección de alto espectro.</h2>
+                          <br>
+                          <a href="#about" class="get-started-btn">Conoce el tratamiento</a>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item" style="background-image: url('./assets/img/index-hero2.png');">
-            <div class="carousel-container">
-              <div class="col-md-7 carousel-content container">
-                <h1><b>20 años</b> siendo la mejor opción de protección para las semillas</h1>
-                <br>
-                <h2>Vigor y protección de alto espectro.</h2>
-                <br>
-                <a href="#about" class="get-started-btn">Conoce el tratamiento</a>
+              <div class="swiper-slide fll-bg" style="background-image: url(./assets/images/banner2.png);">
+                  <div class="container">
+                      <div class="slider-infocont">
+                          <h1><b>20 años</b> siendo la mejor opción de protección para las semillas</h1>
+                          <br>
+                          <h2>Vigor y protección de alto espectro.</h2>
+                          <br>
+                          <a href="#about" class="get-started-btn">Conoce el tratamiento</a>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url('./assets/img/index-hero3.png');">
-            <div class="carousel-container">
-              <div class="col-md-7 carousel-content container">
-                <h1><b>20 años</b> siendo la mejor opción de protección para las semillas</h1>
-                <br>
-                <h2>Vigor y protección de alto espectro.</h2>
-                <br>
-                <a href="#about" class="get-started-btn">Conoce el tratamiento</a>
+              <div class="swiper-slide fll-bg" style="background-image: url(./assets/images/banner3.png);">
+                  <div class="container">
+                      <div class="slider-infocont">
+                          <h1><b>20 años</b> siendo la mejor opción de protección para las semillas</h1>
+                          <br>
+                          <h2>Vigor y protección de alto espectro.</h2>
+                          <br>
+                          <a href="#about" class="get-started-btn">Conoce el tratamiento</a>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
+          <div class="swiper-pagination"></div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   
 
@@ -114,42 +115,42 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <img src="./assets/images/icon1.png" alt="">
               <p>Desarrollamos investigaciones de alta eficiencia</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
+              <img src="./assets/images/icon2.png" alt="">
               <p>Usamos tecnología de última generación</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <img src="./assets/images/icon3.png" alt="">
               <p>Desarrollamos soluciones tecnológicas eficientes para cada región y semillero</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
+              <img src="./assets/images/icon4.png" alt="">
               <p>Capacitamos y entrenamos en aplicación y manejo de semillas tratadas</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <img src="./assets/images/icon5.png" alt="">
               <p>Comprendemos y escuchamos los retos de los cultivos locales para impulsar su productividad</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
+              <img src="./assets/images/icon6.png" alt="">
               <p>Evaluamos la compatibilidad entre tratamientos de semillas y otras tecnologías</p>
             </div>
           </div>
@@ -190,7 +191,7 @@
 
 
     <!-- ======= Video Section ======= -->
-    <section id="video" class="d-flex align-items-center fll-bg" style="background-image: url('./assets/img/index-video1.png');">
+    <section id="video" class="d-flex align-items-center fll-bg" style="background-image: url('./assets/images/video1.png');">
 
       <div class="container-fluid" data-aos="fade-up">
         <div class="row justify-content-center">
@@ -224,7 +225,7 @@
         <div class="row">
           <div class="p-0 col-lg-4 col-md-6 d-flex align-items-stretch">
             <div>
-              <img src="./assets/img/germinacion.png" class="card-img-top" alt="...">
+              <img src="./assets/images/card1.png" class="card-img-top" alt="...">
               <div id="card-f1" class="card-footer text-center">
                 <h5>germinaciónt</h5>
               </div>
@@ -233,7 +234,7 @@
 
           <div class="p-0 col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div>
-              <img src="./assets/img/plantulas.png" class="card-img-top" alt="...">
+              <img src="./assets/images/card2.png" class="card-img-top" alt="...">
               <div id="card-f2" class="card-footer text-center">
                 <h5>emergencia de las plantulas</h5>
               </div>
@@ -242,7 +243,7 @@
 
           <div class="p-0 col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div>
-              <img src="./assets/img/cultivo.png" class="card-img-top" alt="...">
+              <img src="./assets/images/card3.png" class="card-img-top" alt="...">
               <div id="card-f3" class="card-footer text-center">
                 <h5>establecimiento del cultivo</h5>
               </div>
@@ -257,27 +258,44 @@
 
 
 
-    <!-- =======  News Section ======= -->
-    <section id="spam" class="spam">
+    <!-- =======  Spam Section ======= -->
+    <section id="SpamMainContainer">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="media">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <div class="media-body">
-                <p>Protección efectiva de las principales plagas y enfermedades que afectan los cultivos durante su establecimiento</p>
+
+          <div class="col-md-6 col-sm-12 div1">
+
+            <div class="row">
+              <div class="media">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <div class="media-body">
+                  <p>Protección efectiva de las principales plagas y enfermedades que afectan los cultivos durante su establecimiento</p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <div class="media-body">
+                  <p>Protección efectiva de las principales plagas y enfermedades que afectan los cultivos durante su establecimiento</p>
+                </div>
               </div>
             </div>
-            <div class="media">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <div class="media-body">
-                <p>Protección efectiva de las principales plagas y enfermedades que afectan los cultivos durante su establecimiento</p>
+            <div class="row">
+              <div class="col-6 text-center">
+                <div class="img-cont"><img src="./assets/images/logoMaxx.png" alt=""></div>
+                <button type="button" class="btn btn-secondary mt-4
+                ">Conoce el portafolio</button>
+              </div>
+              <div class="col-6 text-center">
+                <div class="img-cont"><img src="./assets/images/logoVibrance.png" alt=""></div>
+                <button type="button" class="btn btn-secondary mt-4
+                ">Conoce el portafolio</button>
               </div>
             </div>
+
           </div>
 
-          <div class="col-md-6 col-sm-12 bg-danger">
-            <h1>div2</h1>
+          <div class="col-md-6 col-sm-12 div2">
+            <img src="./assets/images/spam1.png" alt="">
           </div>
 
         </div>
@@ -298,7 +316,7 @@
          <!-- Line -->
         <div class="row align-items-center">
           <div class="col-md-4">
-            <img src="./assets/img/cultivo.png" style="width: 100%;" alt="">
+            <img src="./assets/images/news1.png" style="width: 100%;" alt="">
           </div>
           <div class="col-md-5">
             <h2>Syngenta presenta sus mejores tecnologías en Expo Alimentaria 2017</h2>
@@ -312,7 +330,7 @@
         <!-- Line -->
         <div class="row align-items-center">
          <div class="col-md-4">
-           <img src="./assets/img/plantulas.png" style="width: 100%;" alt="">
+           <img src="./assets/images/news2.png" style="width: 100%;" alt="">
          </div>
          <div class="col-md-5">
            <h2>Semillas con valor agregado, el plus para las forrajeras</h2>
@@ -326,7 +344,7 @@
         <!-- Line -->
         <div class="row align-items-center">
           <div class="col-md-4">
-            <img src="./assets/img/germinacion.png" style="width: 100%;" alt="">
+            <img src="./assets/images/news3.png" style="width: 100%;" alt="">
           </div>
           <div class="col-md-5">
             <h2>Syngenta potencia la agricultura y lanza Doctor Agro</h2>
@@ -351,22 +369,22 @@
 
 
   <!-- ======= Footer ======= -->
-  <footer class="fll-bg" style="background-image: url(./assets/img/footer1.png);">
+  <footer class="fll-bg" style="background-image: url(./assets/images/footer1.png);">
     <div class="container">
         <div class="info-cont">
             <h4>Síguenos</h4>
             <div class="sn-links">
                 <a href="#">
-                    <img src="./assets/img/icon01_FB.png" alt="Syngenta | Berries | Facebook">
+                    <img src="./assets/images/icon01_FB.png" alt="Syngenta | Berries | Facebook">
                 </a>
                 <a href="#">
-                    <img src="./assets/img/icon02_YT.png" alt="Syngenta | Berries | Youtube">
+                    <img src="./assets/images/icon02_YT.png" alt="Syngenta | Berries | Youtube">
                 </a>
                 <a href="#">
-                    <img src="./assets/img/icon03_IN.png" alt="Syngenta | Berries | Linkedi">
+                    <img src="./assets/images/icon03_IN.png" alt="Syngenta | Berries | Linkedi">
                 </a>
                 <a href="#">
-                    <img src="./assets/img/icon04_TW.png" alt="Syngenta | Berries | Twitter">
+                    <img src="./assets/images/icon04_TW.png" alt="Syngenta | Berries | Twitter">
                 </a>
             </div>
         </div>
@@ -402,6 +420,9 @@
   
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/swiper.js"></script>
 
 </body>
 
