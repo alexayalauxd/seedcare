@@ -248,14 +248,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: black;
+  color: #282828;
 }
 
 .mobile-nav {
   position: fixed;
   top: 55px;
   right: 15px;
-  bottom: 15px;
+  /* bottom: 15px; */
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
@@ -265,6 +265,7 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   border-radius: 10px;
   padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .mobile-nav * {
@@ -336,6 +337,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
+}
+
+.icofont-navigation-menu:before {
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -452,6 +457,16 @@ section#MainBanner .cont-w h2{
   width: 30%;
   left: 150px;
   bottom: 100px;
+}
+
+@media (max-width: 992px) {
+  #heroEvam .cont {
+    background: none;
+  }
+  #heroEvam .cont .btnBlue{
+    color: #282828;
+    width: 60vw;
+  }
 }
 
 /*--------------------------------------------------------------
