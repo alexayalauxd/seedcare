@@ -40,6 +40,14 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled, #header.header-inner-pages {
   background: rgba(40, 40, 40, 0.9);
+  color: white;
+}
+
+#header.header-scrolled .container-fluid nav ul li a{
+  color: white;
+}
+#header.header-scrolled{
+  
 }
 
 #header .logo, .logo2 {
@@ -308,7 +316,7 @@ section#MainBanner .slider-infocont a{
 }
 @media(max-width: 600px){
   section#MainBanner{
-      height: 350px;
+      height: 450px;
   }
   section#MainBanner .slider-infocont{
       width: 100% !important;
@@ -317,16 +325,17 @@ section#MainBanner .slider-infocont a{
       padding: 0 20px !important;
       text-align: center !important;
   }
-  section#MainBanner .slider-infocont h2{
-      font-size: 2rem;
-  }
-  section#MainBanner .slider-infocont p{
+  section#MainBanner .slider-infocont h1{
       font-size: 1.5rem;
+  }
+  section#MainBanner .slider-infocont h2{
+      font-size: 1rem;
       padding-bottom: 20px;
   }
   section#MainBanner .slider-infocont a{
-      font-size: 1rem;
+      font-size: .7rem;
       min-width: inherit;
+      margin: 0;
   }
 }
 
@@ -1006,6 +1015,6 @@ footer #FooterLegal a:last-child{
 /*--------------------------------------------------------------
 # Hero-v
 --------------------------------------------------------------*/
-.hero-v .text-center{
-  width: 80%;
+#hero-v .container .cont .imgs img{
+  margin-top: 30px;
 }
