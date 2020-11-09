@@ -454,8 +454,8 @@ section#MainBanner .cont-w h2{
 
 #heroEvam .btnBlue{
   position: absolute;
-  width: 30%;
-  left: 150px;
+  width: 100%;
+  left: 20px;
   bottom: 100px;
 }
 
@@ -647,6 +647,15 @@ section {
   color: #02a91f;
 }
 
+@media (max-width: 575px) {
+  #imgs h5{
+    padding-bottom: 30px;
+  }
+  #imgs .icon{
+    transform: rotate(90deg);
+  }
+}
+
 /*--------------------------------------------------------------
 # Form
 --------------------------------------------------------------*/
@@ -710,13 +719,16 @@ section {
   background-image: url(../images/map.png);
   color: #282828;
 }
+#map .title h1{
+  font-size: 2rem;
+}
 #map .card{
   padding: 40px 80px;
   border: none;
 }
-#map .card h2{
+/* #map .card h2{
   color: #005dab;
-}
+} */
 #map .card .title-O{
   color: #8f5a28;
 }
@@ -728,7 +740,18 @@ section {
   #map{
     background-image: none;
   }
+  #map .card{
+    width: 100%;
+  }
 }
+
+@media (max-width: 768px) {
+  #map .card{
+    text-align: center !important; 
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Text-line
@@ -782,6 +805,9 @@ section {
 --------------------------------------------------------------*/
 #video {
   width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 
@@ -864,14 +890,6 @@ section {
   -webkit-animation: none;
   animation: none;
   border-radius: 0;
-}
-
-
-
-@media (min-width: 1200px) {
-  #video {
-    background-attachment: fixed;
-  }
 }
 
 @media (max-width: 991px) {
@@ -1094,10 +1112,13 @@ footer #FooterLegal a:last-child{
 /*--------------------------------------------------------------
 # Hero-v
 --------------------------------------------------------------*/
-#hero-v .container .cont .imgs img{
-  margin-top: 30px;
-}
-
 #hero-v{
   padding-top: 150px;
 }
+
+@media (max-width: 880px) {
+  #hero-v .container img{
+    width: 80%;
+  }
+}
+
