@@ -1082,3 +1082,7 @@ footer #FooterLegal a:last-child{
 #hero-v .container .cont .imgs img{
   margin-top: 30px;
 }
+
+#hero-v{
+  padding-top: 150px;
+}
