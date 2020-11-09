@@ -880,7 +880,17 @@ section {
 #SpamMainContainer .div1 .icon{
   font-size: 32px;
   padding: 20px;
-  color: #02a91f;
+  padding-top: 0;
+}
+
+#SpamMainContainer .div1 .icon i{
+  color: white;
+  background-color: #02a91f;
+  border-radius: 100%;
+}
+
+#SpamMainContainer .img-cont{
+  height: 30px;
 }
 
 #SpamMainContainer .img-cont img{
