@@ -8,6 +8,7 @@
   --blue: #005dab;
   --green: #73b735;
   --yellow: #f7941d;
+  --orange: #a17700;
   --brown: #8f5a28;
 }
 
@@ -48,19 +49,16 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 #header.header-scrolled, #header.header-inner-pages {
   background: rgba(40, 40, 40, 0.9);
   color: white;
 }
-
 #header.header-scrolled .container-fluid nav ul li a{
   color: white;
 }
 #header.header-scrolled{
   
 }
-
 #header .logo, .logo2 {
   font-size: 28px;
   margin: 0;
@@ -69,23 +67,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
-
 #header .logo a, .logo2 a {
   color: black;
 }
-
 #header .logo img, .logo2 a{
   max-height: 40px;
 }
-
 #header .li-black ul li{
   color: black;
 }
 #header .li-black ul li a{
-  color: black;
+  color: var(--blue);
 }
-
-
 @media (max-width: 992px) {
   #header {
     border: 0;
@@ -402,7 +395,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--brown);
 }
 .swiper-container .swiper-pagination{
-  background-color: white;
+  background-color: var(--white);
   width: 200px;
   margin: 0 auto;
   display: block;
@@ -420,7 +413,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 25px;
   padding: 5px 0;
   border-radius: 2px;
-  border: 1px solid black;
+  border: 1px solid var(--black);
 }
 @media(max-width: 600px){
   #MainBanner{
@@ -660,6 +653,10 @@ section {
 #imgs .right{
   color: #02a91f;
 }
+.img80{
+  width: 100%;
+}
+
 
 @media (max-width: 575px) {
   #imgs h5{
@@ -721,9 +718,22 @@ section {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-#counts {
-  background-color: var(--green);
-  color: white;
+#counts img{
+  width: 100%;
+}
+#counts h5{
+  color: var(--blue);
+}
+#counts a{
+  color: var(--blue);
+  font-weight: bold;
+}
+.txt-blue{
+  font-size: 1.3em;
+  color: var(--blue);
+}
+.txt-orange{
+  color: var(--orange);
 }
 
 /*--------------------------------------------------------------
