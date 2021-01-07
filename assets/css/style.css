@@ -364,12 +364,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
   display: inline-block;
   text-align: center;
-}
-.txt-white{
-  color: var(--white);
+  text-decoration: none;
 }
 .btn-brown{
   background-color: var(--brown);
+  border: none;
 }
 .swiper-container .swiper-pagination{
   background-color: var(--white);
@@ -695,6 +694,9 @@ section {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
+.bg-green{
+  background-color: var(--green);
+}
 #counts img{
   width: 100%;
 }
@@ -814,6 +816,9 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+#video .txt-black{
+  color: var(--black);
 }
 
 #video .container, #video .container-fluid {
@@ -1177,4 +1182,7 @@ footer #FooterLegal a:last-child{
 }
 .card .content .btn button:hover{
   transform: scale(0.9);
+}
+.txt-white{
+  color: var(--white);
 }
