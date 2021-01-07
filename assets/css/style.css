@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #02a91f;
+  background-color: var(--blue);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -186,30 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .menu ul li a{
   color: white;
 }
-/* Get Startet Button */
-.circle-btn {
-  /* margin-left: 25px; */
-  background: #21409a;
-  color: #fff;
-  
-  padding: 15px 50px;
-  transition: 0.3s;
-  font-size: 18px;
-  display: inline-block;
-  border-radius: 32px;
-}
 
-.circle-btn:hover {
-  background: #1d3b96;
-  color: #fff;
-}
-
-@media (max-width: 992px) {
-  .circle-btn {
-    margin: 0 48px 0 0;
-    padding: 6px 18px;
-  }
-}
 
 /* Get Startet Button */
 .get-started-btn {
@@ -735,7 +712,11 @@ section {
 .txt-orange{
   color: var(--orange);
 }
-
+@media (max-width: 992px) {
+  #counts img{
+    width: 40%;
+  }
+}
 /*--------------------------------------------------------------
 # Map-section
 --------------------------------------------------------------*/
@@ -1138,6 +1119,7 @@ footer #FooterLegal a:last-child{
 --------------------------------------------------------------*/
 #hero-v{
   padding-top: 150px;
+  padding: 60px;
 }
 
 @media (max-width: 880px) {
@@ -1146,3 +1128,53 @@ footer #FooterLegal a:last-child{
   }
 }
 
+/*--------------------------------------------------------------
+# Carousel
+--------------------------------------------------------------*/
+.carousel{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+}
+.slider{
+  min-width: 1440px;
+  height: 100%;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: .5em;
+  padding: 1em;
+  border-radius: 16px;
+  border: none;
+  background: #eeeeee;
+}
+.slider .card .content{
+  padding: .2em;
+}
+.card .content p{
+  display: flex;
+  align-items: center;
+  height: 140px;
+  margin: 1em 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: center;
+  padding: 0 4em;
+}
+.card .content .btn button{
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: .7em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}

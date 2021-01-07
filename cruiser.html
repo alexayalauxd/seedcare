@@ -14,6 +14,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Carousel -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 
 <body>
@@ -130,6 +135,77 @@
 
 
 
+  <!-- ======= cards ======= -->
+  <section class="carousel">
+    <div class="slider owl-carousel">
+
+      <div class="card">
+        <img src="./assets/images/cruiser/logo_cruiser.png" alt="">
+        <div class="content">
+          <p>Combina la acción poderosa de un insecticida sistémico y un nuevo modo de acción fungicida. Combate insectos chupadores, enfermedades radiculares y del tubérculo, ofreciendo mayor rendimiento y calidad de papa.</p>
+          <div class="btn text-center">
+            <button class="m-2">Folloto</button>
+            <button class="m-2">Ficha técnica</button>
+            <button class="m-2">Video</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="./assets/images/cruiser/logo_cruiser.png" alt="">
+        <div class="content">
+          <p>Mezcla de un insecticida (tiametoxam) y dos fungicidas (fludioxonil y metalxil-M) para el tratamiento de semilla de frijol, garbanzo, chícharo y soya.</p>
+          <div class="btn text-center">
+            <button class="m-2">Folloto</button>
+            <button class="m-2">Ficha técnica</button>
+            <button class="m-2">Video</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="./assets/images/cruiser/logo_cruiser.png" alt="">
+        <div class="content">
+          <p>Mezcla de insecticida, tiametoxam, y dos fungicidas, difenoconazol y metalxil-M, para el tratamiento de la semilla de trigo, cebada y avena.</p>
+          <div class="btn text-center">
+            <button class="m-2">Folloto</button>
+            <button class="m-2">Ficha técnica</button>
+            <button class="m-2">Video</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="./assets/images/cruiser/logo_cruiser.png" alt="">
+        <div class="content">
+          <p>Defiende contra las enfermedades transmitidas por las semillas y el suelo del maíz. Ofrece la mejor protección sistémica de su clase.</p>
+          <div class="btn text-center">
+            <button class="m-2">Folloto</button>
+            <button class="m-2">Ficha técnica</button>
+            <button class="m-2">Video</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="./assets/images/cruiser/logo_cruiser.png" alt="">
+        <div class="content">
+          <p>Integra un insecticida de amplio espectro y controla un gran número de enfermedades. Diseñado para el tratamiento 
+            de semillas.</p>
+          <div class="btn text-center">
+            <button class="m-2">Folloto</button>
+            <button class="m-2">Ficha técnica</button>
+            <button class="m-2">Video</button>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+
+
+
   <!-- ======= Hero-v ======= -->
   <section id="hero-v">
     <div class="container">
@@ -169,6 +245,10 @@
     <section id="counts" class="counts">
       <div class="container">
         <div class="row counters">
+
+          <div class="text-center pb-5 title">
+            <h1>La mejor solución para proteger las semillas y generar un alto retorno de inversión</h1>
+          </div>
 
           <div class="align-items-center justify-content-center col-lg-3 col-12 text-start">
             <div class="p-2 text-center"><h1 class="txt-blue">PODER DE ENRAIZAMIENTO</h1></div>
@@ -281,7 +361,14 @@
 
 
 
-
+  <script>
+    $(".slider").owlCarousel({
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 3000, //2000ms = 2s;
+      autoplayHoverPause: true,
+    });
+  </script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
