@@ -10,6 +10,7 @@
   --yellow: #f7941d;
   --orange: #a17700;
   --brown: #8f5a28;
+  --blue_light: #3a89ca;
 }
 
 
@@ -43,148 +44,42 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
-  padding: 20px 0;
-  transition: all 0.5s;
-  z-index: 997;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-#header.header-scrolled, #header.header-inner-pages {
-  background: rgba(40, 40, 40, 0.9);
-  color: white;
-}
-#header.header-scrolled .container-fluid nav ul li a{
-  color: white;
-}
-#header.header-scrolled{
-  
-}
-#header .logo, .logo2 {
-  font-size: 28px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-#header .logo a, .logo2 a {
-  color: black;
-}
-#header .logo img, .logo2 a{
-  max-height: 40px;
-}
-#header .li-black ul li{
-  color: black;
-}
-#header .li-black ul li a{
-  color: var(--blue);
-}
-@media (max-width: 992px) {
-  #header {
-    border: 0;
-    padding: 15px 0;
-  }
-  #header .logo2 {
+@media (max-width: 767px) {
+  .img_2{
     display: none;
   }
+  .navbar-collapse{
+    background-color: var(--blue);
+    border-radius: 8px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #c2c2c2;
+    font-weight: 100;
+  }
+  .navbar-light .navbar-nav .active .nav-link {
+    color: var(--white);
+  }
+  .navbar-light .navbar-nav{
+    cursor: pointer;
+  }
 }
-
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/* Desktop Navigation */
-.nav-menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media (min-width: 767px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: var(--blue);
+    font-weight: 100;
+  }
+  .navbar-light .navbar-nav .active .nav-link {
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+    font-weight: bold;
+  }
 }
-
-.nav-menu > ul {
-  display: flex;
+.navbar-light .navbar-nav .nav-link:hover{
+  color: var(--blue_light);
+  transform: scale(.9);
 }
-
-.nav-menu > ul > li {
-  position: relative;
-  white-space: nowrap;
-  margin: 0 12px;
-}
-
-.nav-menu a {
-  display: block;
-  position: relative;
-  color: rgba(255, 255, 255, 0.7);
-  transition: 0.3s;
-  font-size: 14px;
-  padding: 25px 3px;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-}
-
-.nav-menu > ul > li > a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: var(--blue);
-  visibility: hidden;
-  width: 0px;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
-  visibility: visible;
-  width: 100%;
-}
-
-.menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.menu > ul {
-  display: flex;
-}
-
-.menu > ul > li {
-  position: relative;
-  white-space: nowrap;
-  margin: 0 12px;
-}
-
-.menu a {
-  display: block;
-  position: relative;
-  color: rgba(255, 255, 255, 0.7);
-  transition: 0.3s;
-  font-size: 14px;
-  padding: 25px 3px;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-}
-
-.menu > ul > li > a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: #02a91f;
-  visibility: hidden;
-  width: 0px;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.menu a:hover:before, .menu li:hover > a:before, .menu .active > a:before {
-  visibility: visible;
-  width: 100%;
-}
-
-#header .menu ul li a{
-  color: white;
+.navbar-light .navbar-nav .active .nav-link:hover{
+  border-bottom: 1px solid var(--blue_light);
 }
 
 
@@ -449,6 +344,45 @@ h1, h2, h3, h4, h5, h6 {
   #heroEvam .cont .btnBlue{
     color: #282828;
     width: 60vw;
+  }
+}
+#hero-v .cont{
+  margin-top: 18%;
+}
+@media (max-width: 992px){
+  .swiper-slide .container{
+    margin-top: 50px;
+  }
+}
+@media (max-width: 768px){
+  .swiper-slide .container{
+    margin-top: 80px;
+  }
+  .swiper-slide .container h2{
+    font-size: 2.2em;
+  }
+  .swiper-slide .container p{
+    font-size: 1.2em;
+  }
+  .swiper-slide .container a{
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 600px){
+  .swiper-slide .container{
+    margin-top: 50px;
+  }
+  .swiper-slide .container h2{
+    font-size: 1em;
+    padding: 10px;
+  }
+  .swiper-slide .container p{
+    font-size: .7em;
+    padding: 10px;
+  }
+  .swiper-slide .container a{
+    font-size: .7em;
+    padding: 10px;
   }
 }
 
@@ -1187,3 +1121,209 @@ footer #FooterLegal a:last-child{
   color: var(--white);
 }
 
+
+/*---------- ---------- ---------- ---------- ---------- ----------
+    Contacto Section
+---------- ---------- ---------- ---------- ---------- ----------*/
+#ContactoContainer section#ContactFormSection .container h2{
+  text-align: center;
+  font-size: 3rem;
+  color: var(--green);
+}
+/*---------- ---------- ----------
+    Formulario - input
+---------- ---------- ----------*/
+.formulario {
+  padding: 60px 0;
+}
+.formulario__row{
+  display: flex;
+}
+.formulario__row .formulario__grupo:first-child{
+  padding-right: 20px;
+}
+.formulario__row .formulario__grupo:last-child{
+  padding-left: 20px;
+}
+.formulario__row .formulario__grupo{
+  width: 50%;
+  padding: 25px 0;
+}
+.formulario__row .formulario__grupo label span{
+  color: red;
+}
+.formulario__row .formulario__grupo label{
+  display: block;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  color: gray;
+}
+.formulario__grupo-input {
+  position: relative;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(151, 151, 151);
+}
+
+:-ms-input-placeholder {
+  color: rgb(151, 151, 151);
+}
+
+::placeholder {
+  color: rgb(151, 151, 151);
+}
+
+.formulario__input {
+  border: none;
+  width: 100%;
+  height: 45px;
+  padding: 0 40px 0 10px;
+  background-color: none;
+  border-bottom: 2px solid gray;
+  font-size: 1.5em;
+}
+.formulario__input:focus {
+border-bottom: 2px solid var(--greenDark);
+outline: none
+}
+.formulario__input-error {
+  color: indianred;
+margin-bottom: 0;
+  display: none;
+  padding: 5px;
+  font-size: 0.6em;
+}
+.formulario__input-error-activo {
+  display: block;
+}
+.formulario__validacion-estado {
+position: absolute;
+right: 10px;
+bottom: 15px;
+z-index: 100;
+font-size: 16px;
+  opacity: 0;
+}
+
+/*---------- ---------- ----------
+    TypeCheckbox
+---------- ---------- ----------*/
+.checkbox{
+  width: 100%;
+  font-size: 2rem;
+}
+.checkbox__title{
+  color: gray;
+}
+.checkbox__row{
+  padding: .5em 1em;
+}
+.checkbox__item{
+  margin-right: 10PX;
+  color: black;
+}
+
+/*---------- ---------- ----------
+  terminos
+---------- ---------- ----------*/
+#grupo__terminos{
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  color: black;
+  margin: 50px auto;
+}
+.formulario__label, .formulario__checkbox{
+  font-size: 2rem;
+}
+
+/*---------- ---------- ----------
+  color
+---------- ---------- ----------*/
+.formulario__grupo-terminos, .formulario__mensaje, .formulario__grupo-btn-enviar {
+grid-column: span 2;
+}
+.formulario__mensaje {
+background: #f5d0d0;
+padding: 15px;
+border-radius: 3px;
+  display: none;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px 0 30px 0;
+}
+.formulario__mensaje-activo {
+display: block;
+}
+.formulario__mensaje p {
+margin: 0;
+}
+.formulario__grupo-btn-enviar {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.formulario__mensaje-exito {
+font-size: 14px;
+color: #24ca32;
+display: none;
+}
+.formulario__mensaje-exito-activo {
+display: block;
+}
+
+/*---------- ---------- ----------
+  validacion
+---------- ---------- ----------*/
+.formulario__grupo-correcto .formulario__validacion-estado {
+color: #24ca32;
+opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+color: #f63f57;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+color: #f63f57;
+opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+border-bottom: 2px solid #f63f57;
+}
+
+#SendFormBtn:disabled{
+  opacity: 0.3;
+}
+
+
+/*---------- ---------- ----------
+  media
+---------- ---------- ----------*/
+@media screen and (max-width: 800px) {
+.formulario {
+  grid-template-columns: 1fr;
+}
+.formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+  grid-column: 1;
+}
+}
+
+@media(max-width: 600px){
+  .formulario__row{
+      display: block;
+      font-size: 1.2em;
+  }
+  .formulario__row .formulario__grupo{
+      width: 100%;
+      padding: 30px 0 !important;
+  }
+  .formulario__row .formulario__grupo .formulario__label{
+      padding-bottom: 5px;
+      font-size: 1.4em;
+  }
+}

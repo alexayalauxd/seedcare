@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Seedacer</title>
-  
+
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -12,38 +12,42 @@
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  
+
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-  </head>
+</head>
 <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top ">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-xl-9 d-flex align-items-center justify-content-between">
-            <img src="./assets/images/main/logo_green.png" alt="">
-  
-            <nav class="nav-menu d-none d-lg-block li-black">
-              <ul>
-                <li><a href="cruiser.html">CRUISER</a></li>
-                <li><a href="institute.html">THE SEEDCARE INSTITUTE</a></li>
-                <li><a href="emav.html">CONTACTO</a></li>
-              </ul>
-            </nav>
-  
-            <img class="logo2" src="./assets/images/main/logo_blue.png" alt="">
-          </div>
+    <nav id="navbar-top" class="navbar fixed-top navbar-expand-md navbar-light bg-light p-4">
+        <a class="logo_1"><img class="img_1" src="./assets/images/main/logo_green.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav m-auto mt-2 mt-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="cruiser.html">CRUISER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="institute.html">THE SEEDCARE INSTITUTE</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+            <a class="logo_2"><img class="img_2" src="./assets/images/main/logo_blue.png" alt=""></a>
         </div>
-      </div>
-    </header>
+    </nav>
+
+
+
+
 
     <div id="ContactoContainer" class="main-content">
-
-
         <section id="ContactFormSection" style="margin-top: 150px;">
             <div class="container">
-                <h2>Regístrate</h2>
+                <h2>Regístrate y entérate de nuestras últimas 
+                    soluciones tecnológicas y capacitaciones</h2>
 
                 <form action="" class="formulario" id="formulario">
 
@@ -115,20 +119,20 @@
 
                     <div class="formulario__row">
                         <div class="formulario__grupo">
+                            <label class="formulario__label" for="InputUserName"><span>*</span> Municipio</label>
+                            <div class="formulario__grupo-input">
+                                <select id="SelectMXLocal" class="formulario__input" name="dropDown" disabled="disabled">
+                                    <option>Selecciona un estado</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="formulario__grupo">
                             <label class="formulario__label" for="InputUserName"><span>*</span> No. de hectáreas</label>
                             <div class="formulario__grupo-input">
                                 <select id="hectares" class="formulario__input" name="dropDown">
                                     <option value="De 1 - 5 hectáreas" selected>De 1-5 hectáreas</option>
                                     <option value="De 6 - 19 hectáreas">De 6-19 hectáreas</option>
                                     <option value="Mas de 20 hectáreas">Mas de 20 hectáreas</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="formulario__grupo">
-                            <label class="formulario__label" for="InputUserName"><span>*</span> Municipio</label>
-                            <div class="formulario__grupo-input">
-                                <select id="SelectMXLocal" class="formulario__input" name="dropDown" disabled="disabled">
-                                    <option>Selecciona un estado</option>
                                 </select>
                             </div>
                         </div>
@@ -139,30 +143,24 @@
                         <p class="formulario__input-error">Selecciona al menos una opción</p>
                         <div class="checkbox__row">
                             <span class="checkbox__item">
-                                <input type="checkbox" id="RecieveInfoFresas" value="Fresas">
-                                <label for="RecieveInfoFresas">Fresas</label>
+                                <input type="checkbox" id="RecieveInfoPapa" value="Papa">
+                                <label for="RecieveInfoPapa">Papa</label>
                             </span>
                             <span class="checkbox__item">
-                                <input type="checkbox" id="RecieveInfoArandanos" value="Arándanos">
-                                <label for="RecieveInfoArandanos">Arándanos</label>
-                            </span>
-                        </div>
-
-                        <div class="checkbox__row">
-                            <span class="checkbox__item">
-                                <input type="checkbox" id="RecieveInfoMoras" value="Moras">
-                                <label for="RecieveInfoMoras">Moras</label>
+                                <input type="checkbox" id="RecieveInfoFrijol" value="Frijol">
+                                <label for="RecieveInfoFrijol">Frijol</label>
                             </span>
                             <span class="checkbox__item">
-                                <input type="checkbox" id="RecieveInfoFrambuesas" value="Frambuesas">
-                                <label for="RecieveInfoFrambuesas">Frambuesas</label>
+                                <input type="checkbox" id="RecieveInfoArroz" value="Arroz">
+                                <label for="RecieveInfoArroz">Arroz</label>
                             </span>
-                        </div>
-
-                        <div class="checkbox__row">
                             <span class="checkbox__item">
-                                <input type="checkbox" id="RecieveInfoOtros" value="Otros">
-                                <label for="RecieveInfoOtros">Otros</label>
+                                <input type="checkbox" id="RecieveInfoCereal" value="Cereal">
+                                <label for="RecieveInfoCereal">Cereal</label>
+                            </span>
+                            <span class="checkbox__item">
+                                <input type="checkbox" id="RecieveInfoMaíz" value="Maíz">
+                                <label for="RecieveInfoMaíz">Maíz</label>
                             </span>
                         </div>
                     </div>
@@ -171,9 +169,13 @@
                     <div class="formulario__grupo" id="grupo__terminos">
                         <label class="formulario__label">
                             <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                            <span style="color: red;">*</span> He leído y acepto <a style="text-decoration: underline; color: #62801e;" href="https://www.syngenta.com.mx/terminos-y-condiciones" target="_blank">condiciones de servicio</a> y <a style="text-decoration: underline; color: #62801e;" href="https://www.syngenta.com.mx/aviso-de-privacidad-corporativo" target="_blanck">políticas de privacidad</a>
+                            <span style="color: red;">*</span>He leído y acepto <a style="text-decoration: underline; color: #62801e;" href="https://www.syngenta.com.mx/terminos-y-condiciones" target="_blank">condiciones de servicio</a> y <a style="text-decoration: underline; color: #62801e;" href="https://www.syngenta.com.mx/aviso-de-privacidad-corporativo" target="_blanck">políticas de privacidad</a>
+                            <br>
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            <span style="color: red;">*</span>Quiero que me contacten para recibir asesoría o información para mi cultivo.</a>
                             <p class="formulario__input-error">Debe de aceptar los términos y condiciones.</p>
-                            <br><small style="font-size: 10px;">Todos los campos con <span style="color: red;">*</span> son obligatorios.</small>
+                            <br>
+                            <small style="font-size: .5em;"><span style="color: red;">*</span>Campos obligatorios</small>
                         </label>
                     </div>
 
