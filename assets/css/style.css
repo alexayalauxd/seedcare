@@ -261,6 +261,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   text-decoration: none;
 }
+.btn_registro{
+    color: var(--white);
+    border: none;
+    width: 40%;
+}
 .btn-brown{
   background-color: var(--brown);
   border: none;
@@ -631,26 +636,85 @@ section {
 .bg-green{
   background-color: var(--green);
 }
+#counts{
+  height: 100%;
+}
 #counts img{
-  width: 100%;
+  width: 30%;
 }
 #counts h5{
-  color: var(--blue);
+  color: var(--blue_light);
+  font-weight: bold;
 }
 #counts a{
   color: var(--blue);
   font-weight: bold;
+  border-bottom: var(--blue) 1px solid;
+}
+#counts p{
+  font-size: .8em;
 }
 .txt-blue{
   font-size: 1.3em;
   color: var(--blue);
 }
 .txt-orange{
+  margin-top: 10%;
   color: var(--orange);
 }
-@media (max-width: 992px) {
-  #counts img{
-    width: 40%;
+.disable h5{
+  color: var(--blue_light);
+  font-weight: bold;
+}
+.disable a{
+  color: var(--blue);
+  font-weight: bold;
+  border-bottom: var(--blue) 1px solid;
+}
+
+.fll-all{
+  height: 0;
+  padding: 0;
+  padding-bottom: 50%;
+  background-image: url(../images/cruiser/lines_1.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.fll-all_2{
+  height: 0;
+  padding: 0;
+  padding-bottom: 50%;
+  background-image: url(../images/cruiser/lines_2.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#counts .containerr img{
+  height: 50px;
+  width: 50px;
+}
+@media (min-width: 768px){
+  #counts .container{
+    display: none;
+  }
+}
+@media (max-width: 768px){
+  .fll-all, .fll-all_2{
+    background-image: none;
+  }
+  #counts{
+    padding: 0;
+  }
+  .disable h5{
+    color: var(--blue_light);
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .disable a{
+    color: var(--blue);
+    font-weight: bold;
+    border-bottom: var(--blue) 1px solid;
   }
 }
 /*--------------------------------------------------------------
