@@ -189,7 +189,7 @@ mainSyngenta.initForm = function () {
 						const rawResponse = await fetch('https://2o62j44a44.execute-api.us-east-1.amazonaws.com/dev/lead', {
 							method: 'POST',
 							body: JSON.stringify({ 
-								"campaign": 'berries',
+								"campaign": 'seedcare',
 								"usr_name": document.getElementById('name').value,
 								"usr_lastname": document.getElementById('lastname').value,
 								"usr_mail": document.getElementById('email').value,
@@ -198,7 +198,7 @@ mainSyngenta.initForm = function () {
 								"usr_state": document.getElementById('SelectMxState').value,
 								"usr_local": document.getElementById('SelectMXLocal').value,
 								"usr_hectares": document.getElementById('hectares').value,
-								"accept_terms": document.getElementById('terminos').checked,
+								"accept_terms": document.getElementById('terminos').checked + ", " + document.getElementById('recieveinfo').checked,
 								"usr_farming": getFarming(),
 								"createdAt": (new Date().getTime()),
 								"action": 'put_lead'

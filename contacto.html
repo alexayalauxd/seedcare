@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -17,15 +18,20 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <script async src="js/states.js"></script>
 </head>
+
 <body>
     <!-- ======= Header ======= -->
     <nav id="navbar-top" class="navbar fixed-top navbar-expand-md navbar-light p-4">
         <a class="logo_1"><img class="img_1" src="./assets/images/main/logo_green.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav m-auto mt-2 mt-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">INICIO</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="cruiser.html">CRUISER</a>
                 </li>
@@ -47,7 +53,7 @@
     <div id="ContactoContainer" class="main-content">
         <section id="ContactFormSection" style="margin-top: 150px;">
             <div class="container">
-                <h2>Regístrate y entérate de nuestras últimas 
+                <h2>Regístrate y entérate de nuestras últimas
                     soluciones tecnológicas y capacitaciones</h2>
 
                 <form action="" class="formulario" id="formulario">
@@ -57,20 +63,24 @@
                         <div class="formulario__grupo" id="grupo__name">
                             <label for="name" class="formulario__label"><span>*</span> Nombre</label>
                             <div class="formulario__grupo-input">
-                                <input type="text" class="formulario__input" name="name" id="name" placeholder="Nombre(s)">
+                                <input type="text" class="formulario__input" name="name" id="name"
+                                    placeholder="Nombre(s)">
                                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             </div>
-                            <p class="formulario__input-error">Este campo no puede estar vacio y solo puede contener letras.</p>
+                            <p class="formulario__input-error">Este campo no puede estar vacio y solo puede contener
+                                letras.</p>
                         </div>
 
                         <!-- Grupo: lastname -->
                         <div class="formulario__grupo" id="grupo__lastname">
                             <label for="lastname" class="formulario__label"><span>*</span> Apellidos</label>
                             <div class="formulario__grupo-input">
-                                <input type="text" class="formulario__input" name="lastname" id="lastname" placeholder="Apellido Paterno/Materno">
+                                <input type="text" class="formulario__input" name="lastname" id="lastname"
+                                    placeholder="Apellido Paterno/Materno">
                                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             </div>
-                            <p class="formulario__input-error">Este campo no puede estar vacio y solo puede contener letras.</p>
+                            <p class="formulario__input-error">Este campo no puede estar vacio y solo puede contener
+                                letras.</p>
                         </div>
                     </div>
 
@@ -79,20 +89,24 @@
                         <div class="formulario__grupo" id="grupo__email">
                             <label for="email" class="formulario__label"><span>*</span> Mail</label>
                             <div class="formulario__grupo-input">
-                                <input type="email" class="formulario__input" name="email" id="email" placeholder="Correo electrónico">
+                                <input type="email" class="formulario__input" name="email" id="email"
+                                    placeholder="Correo electrónico">
                                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             </div>
-                            <p class="formulario__input-error">Este campo no puede estar vacio y solo puede contener letras, números, puntos, guiones y guion bajo.</p>
+                            <p class="formulario__input-error">Este campo no puede estar vacio y solo puede contener
+                                letras, números, puntos, guiones y guion bajo.</p>
                         </div>
-        
+
                         <!-- Grupo: phone -->
                         <div class="formulario__grupo" id="grupo__phone">
                             <label for="phone" class="formulario__label"><span>*</span> Teléfono</label>
                             <div class="formulario__grupo-input">
-                                <input type="text" maxlength="10" minlength="8" class="formulario__input" name="phone" id="phone" placeholder="(55)">
+                                <input type="text" maxlength="10" minlength="8" class="formulario__input" name="phone"
+                                    id="phone" placeholder="(55)">
                                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             </div>
-                            <p class="formulario__input-error">Este campo no puede estar vacio y solo puede contener números y el máximo son 10 dígitos.</p>
+                            <p class="formulario__input-error">Este campo no puede estar vacio y solo puede contener
+                                números y el máximo son 10 dígitos.</p>
                         </div>
                     </div>
 
@@ -122,7 +136,8 @@
                         <div class="formulario__grupo">
                             <label class="formulario__label" for="InputUserName"><span>*</span> Municipio</label>
                             <div class="formulario__grupo-input">
-                                <select id="SelectMXLocal" class="formulario__input" name="dropDown" disabled="disabled">
+                                <select id="SelectMXLocal" class="formulario__input" name="dropDown"
+                                    disabled="disabled">
                                     <option>Selecciona un estado</option>
                                 </select>
                             </div>
@@ -170,22 +185,31 @@
                     <div class="formulario__grupo" id="grupo__terminos">
                         <label class="formulario__label text1">
                             <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                            <span style="color: red;">*</span>He leído y acepto <a style="text-decoration: underline; color: #62801e;" href="https://www.syngenta.com.mx/terminos-y-condiciones" target="_blank">condiciones de servicio</a> y <a style="text-decoration: underline; color: #62801e;" href="https://www.syngenta.com.mx/aviso-de-privacidad-corporativo" target="_blanck">políticas de privacidad</a>
+                            <span style="color: red;">*</span>He leído y acepto <a
+                                style="text-decoration: underline; color: #62801e;"
+                                href="https://www.syngenta.com.mx/terminos-y-condiciones" target="_blank">condiciones de
+                                servicio</a> y <a style="text-decoration: underline; color: #62801e;"
+                                href="https://www.syngenta.com.mx/aviso-de-privacidad-corporativo"
+                                target="_blanck">políticas de privacidad</a>
                             <br>
-                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                            <span style="color: red;">*</span>Quiero que me contacten para recibir asesoría o información para mi cultivo.</a>
+                            <input class="formulario__checkbox" type="checkbox" name="recieveinfo" id="recieveinfo">
+                            <span style="color: red;">*</span>Quiero que me contacten para recibir asesoría o
+                            información para mi cultivo.</a>
                             <p class="formulario__input-error">Debe de aceptar los términos y condiciones.</p>
                             <br>
-                            <small style="font-size: .7em;"><span style="color: red;">*</span>Campos obligatorios</small>
+                            <small style="font-size: .7em;"><span style="color: red;">*</span>Campos
+                                obligatorios</small>
                         </label>
                     </div>
 
                     <div class="formulario__mensaje" id="formulario__mensaje">
-                        <p><i class="fas fa-exclamation-triangle"></i>&nbsp; Favor de llenar el formulario correctamente, todos los campos son obligatorios.</p>
+                        <p><i class="fas fa-exclamation-triangle"></i>&nbsp; Favor de llenar el formulario
+                            correctamente, todos los campos son obligatorios.</p>
                     </div>
 
                     <div class="formulario__mensaje" id="formulario__merrornet">
-                        <p><i class="fas fa-exclamation-triangle"></i>&nbsp; <span id="ErrorMessage"></span>Hubo un error al enviar el formulario, por favor intentalo nuevamente.</p>
+                        <p><i class="fas fa-exclamation-triangle"></i>&nbsp; <span id="ErrorMessage"></span>Hubo un
+                            error al enviar el formulario, por favor intentalo nuevamente.</p>
                     </div>
 
                     <div class="formulario__grupo formulario__grupo-btn-enviar">
@@ -197,56 +221,55 @@
         </section>
 
         <!-- ======= Footer ======= -->
-      <footer class="fll-bg" style="background-image: url(./assets/images/main/footer1.png);">
-        <div class="container">
-            <div class="info-cont">
-                <h4>Síguenos</h4>
-                <div class="sn-links">
-                    <a href="#">
-                        <img src="./assets/images/icon01_FB.png" alt="Syngenta | Berries | Facebook">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/icon02_YT.png" alt="Syngenta | Berries | Youtube">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/icon03_IN.png" alt="Syngenta | Berries | Linkedi">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/icon04_TW.png" alt="Syngenta | Berries | Twitter">
-                    </a>
+        <footer class="fll-bg" style="background-image: url(./assets/images/main/footer1.png);">
+            <div class="container">
+                <div class="info-cont">
+                    <h4>Síguenos</h4>
+                    <div class="sn-links">
+                        <a href="#">
+                            <img src="./assets/images/icon01_FB.png" alt="Syngenta | Berries | Facebook">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/icon02_YT.png" alt="Syngenta | Berries | Youtube">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/icon03_IN.png" alt="Syngenta | Berries | Linkedi">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/icon04_TW.png" alt="Syngenta | Berries | Twitter">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="info-cont">
-                <h4>Syngenta México</h4>
-                <p>Avenida Insurgentes Sur #1431, piso 12 <br/>
-                    Col. Insurgentes Mixcoac. CP 03920 <br/>CDMX Teléfono: 9183 9199</p>
+            <div class="container">
+                <div class="info-cont">
+                    <h4>Syngenta México</h4>
+                    <p>
+                        CDMX<br>
+                        Avenida Insurgentes Sur ·1431, piso 12,<br>
+                        Col. Insurgentes Mixcoac, CP 03920 CDMX<br>
+                        Teléfono: 9183 3199
+                    </p>
+                </div>
             </div>
-            <div class="info-cont">
-                <h4>Seedcare Institute™ México</h4>
-                <p>Avenida Insurgentes Sur #1431, piso 12<br/>
-                    Col. Insurgentes Mixcoac CP. 03920 Guadalajara, Jal.<br/>
-                    Teléfono: 9183 9199</p>
+            <div id="FooterLegal">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad Syngenta Agro</a>
+                <a href="#">Política de privacidad Syngenta Corporativo</a>
             </div>
-        </div>
-        <div id="FooterLegal">
-            <a href="#">Términos y condiciones</a>
-            <a href="#">Política de privacidad Syngenta Agro</a>
-            <a href="#">Política de privacidad Syngenta Corporativo</a>
-        </div>
-      </footer>
+        </footer>
     </div>
-      <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  
-  <!-- Template Main JS File -->
-  <script src="js/main.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/swiper.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
 </body>
+
 </html>
