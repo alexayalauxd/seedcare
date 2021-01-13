@@ -1620,6 +1620,7 @@ border-bottom: 2px solid #f63f57;
 #counts .container .counters div div h1{
   font-size: 64px;
   font-family: Arial;
+  font-weight: bold;
 }
 #counts .container .counters div div p{
   font-size: 14px;
