@@ -253,14 +253,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
-.swiper-pagination-bullet{
-  background: none;
-  width: 20px;
-  height: 25px;
-  padding: 1px 0;
-  border-radius: 7px;
-  border: 1px solid var(--black);
-}
+
 @media(max-width: 600px){
   h1, h2, h3, h4, h5, h6 {
     padding: 20px;
@@ -1726,5 +1719,48 @@ section#MainBanner .slider-infocont a{
       font-size: 1rem;
       min-width: inherit;
       padding: 16px 52px;
+  }
+}
+
+
+
+
+
+/*----- ----- ----- ----- ----- -----
+  Card Swiper
+----- ----- ----- ----- ----- -----*/
+.div-bf{
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+.swiper__btn{
+  margin: 5px;
+  background-color: var(--blue);
+  border-radius: 8px;
+  border: none;
+  padding: 12px;
+  color: var(--white);
+  justify-content: center;
+  align-items: center;
+}
+.swiper__btn span{
+  color: var(--white);
+}
+.swiper__icon{
+  margin-right: 5px;
+}
+.img__16{
+  width: 20px;
+}
+
+@media (max-width: 768px){
+  .div-bf{
+    display: block;
+  }
+  .swiper__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
