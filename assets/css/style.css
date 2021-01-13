@@ -637,18 +637,53 @@ section {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+.fll-all_3{
+  height: 0;
+  padding: 0;
+  padding-bottom: 50%;
+  background-image: url(../images/institute/three.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.fll-all_4{
+  height: 0;
+  padding: 0;
+  padding-bottom: 50%;
+  background-image: url(../images/institute/logo_cruiser.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.fll-all_5{
+  height: 0;
+  padding: 0;
+  padding-bottom: 50%;
+  background-image: url(../images/lgVibrance.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 #counts .container img{
   width: 200px;
 }
 @media (min-width: 768px){
   #MainContCruiser #counts .container{
     display: none;
+    border: 1px solid green;
+  }
+  #main #know .container{
+    display: none;
   }
 }
 
 @media (max-width: 768px){
-  .fll-all, .fll-all_2{
+  .fll-all, .fll-all_2, .fll-all_3{
     background-image: none;
+  }
+  #main #know{
+    height: auto;
+    padding: 0;
   }
   #counts{
     padding: 0;
@@ -1200,7 +1235,7 @@ padding: 20px 40px;
 ---------- ---------- ---------- ---------- ---------- ----------*/
 #ContactoContainer section#ContactFormSection .container h2{
   text-align: center;
-  font-size: 3rem;
+  font-size: 2em;
   color: var(--green);
 }
 @media (max-width: 768px){
@@ -1258,8 +1293,8 @@ padding: 20px 40px;
   height: 45px;
   padding: 0 40px 0 10px;
   background-color: none;
-  border-bottom: 2px solid gray;
-  font-size: 1.5em;
+  border-bottom: 2px solid var(--gray);
+  font-size: 12px;
 }
 .formulario__input:focus {
 border-bottom: 2px solid var(--greenDark);
@@ -1293,6 +1328,7 @@ font-size: 16px;
 }
 .checkbox__title{
   color: gray;
+  font-size: 16px;
 }
 .checkbox__row{
   padding: .5em 1em;
@@ -1300,6 +1336,9 @@ font-size: 16px;
 .checkbox__item{
   margin-right: 10PX;
   color: black;
+}
+.checkbox__item label{
+  font-size: 16px;
 }
 
 /*---------- ---------- ----------
@@ -1311,9 +1350,6 @@ font-size: 16px;
   text-align: center;
   color: black;
   margin: 50px auto;
-}
-.formulario__label, .formulario__checkbox{
-  font-size: 2rem;
 }
 
 /*---------- ---------- ----------
@@ -1392,28 +1428,27 @@ border-bottom: 2px solid #f63f57;
 }
 
 @media(max-width: 600px){
-  .formulario__row{
-      display: block;
-      font-size: 1.2em;
-  }
-  .formulario__row .formulario__grupo{
-      width: 100%;
-      padding: 30px 0 !important;
-  }
-  .formulario__row .formulario__grupo .formulario__label{
-      padding-bottom: 5px;
-      font-size: 1em;
-  }
-  .formulario__row .formulario__grupo .formulario__input{
-    font-size: 1em;
-  }
-  .checkbox__item{
-    font-size: .8em;
-  }
-  .formulario__label.text1{
-    border: 1px solid var(--green_dark);
-    font-size: .9em;
-  }
+	.formulario__row{
+		display: block;
+		font-size: 1.2em;
+	}
+	.formulario__row .formulario__grupo{
+		width: 100%;
+		padding: 30px 0 !important;
+	}
+	.formulario__row .formulario__grupo .formulario__label{
+		padding-bottom: 5px;
+		font-size: 16px;
+	}
+	.formulario__row .formulario__grupo .formulario__input{
+		font-size: 1em;
+	}
+	.checkbox__item{
+		font-size: .8em;
+	}
+	.formulario__label.text1{
+		font-size: 16px;
+	}
 }
 
 
