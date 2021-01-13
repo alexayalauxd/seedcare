@@ -37,14 +37,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-.fll-bg{
-  background: no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -102,12 +94,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--blue);
     border-bottom: 2px solid var(--blue);
     font-weight: bold;
-  }
-}
-@media (max-width: 425px) {
-  .swiper-container .swiper-pagination{
-    height: 40px;
-    font-size: 12px;
   }
 }
 
@@ -257,47 +243,6 @@ h1, h2, h3, h4, h5, h6 {
 # MainBanner
 --------------------------------------------------------------*/
 
-#MainBanner{
-  width: 100%;
-  height: 800px;
-  background-color: var(--white);
-  margin: 0;
-  padding: 0;
-}
-.swiper-container, .swiper-wrapper, .swiper-slide{
-  width: 100%;
-  height: 100%;
-}
-.swiper-slide .container{
-  height: 100%;
-  position: relative;
-}
-.container .slider-infocont{
-  position: absolute;
-  width: 60%;
-  bottom: 30%;
-}
-.slider-h2{
-  font-size: 3rem;
-  color: var(--black);
-}
-.slider-p{
-  font-size: 2rem;
-  color: var(--black);
-  padding: 25px 0;
-}
-.main-button{
-  background-color: var(--yellow);
-  color: var(--black);
-  font-size: 1.5rem;
-  padding: 20px;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-}
-.hover-white:hover{
-  color: white;
-}
 .btn_registro{
     color: var(--white);
     border: none;
@@ -307,19 +252,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--brown);
   border: none;
 }
-.swiper-container .swiper-pagination{
-  background-color: var(--white);
-  width: 200px;
-  margin: 0 auto;
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
+
 .swiper-pagination-bullet{
   background: none;
   width: 20px;
@@ -331,30 +264,6 @@ h1, h2, h3, h4, h5, h6 {
 @media(max-width: 600px){
   h1, h2, h3, h4, h5, h6 {
     padding: 20px;
-  }
-  #MainBanner{
-      height: 350px;
-  }
-  .slider-infocont{
-      width: 100%;
-      bottom: 20%;
-      left: 0;
-      padding: 0 20px;
-      text-align: center;
-  }
-  .slider-infocont h2{
-      font-size: 2rem;
-  }
-  .slider-infocont p{
-      font-size: 1.5rem;
-      padding-bottom: 20px;
-  }
-  .slider-infocont a{
-      font-size: 1rem;
-      min-width: inherit;
-  }
-  .main-button{
-    font-size: 1rem;
   }
 }
 
@@ -401,25 +310,6 @@ h1, h2, h3, h4, h5, h6 {
 #hero-v .cruiser-banner img.cruiser-mainlogo{
   max-width: 200px;
 }
-@media (max-width: 992px){
-  .swiper-slide .container{
-    margin-top: 50px;
-  }
-}
-@media (max-width: 768px){
-  .swiper-slide .container{
-    margin-top: 80px;
-  }
-  .swiper-slide .container h2{
-    font-size: 2.2em;
-  }
-  .swiper-slide .container p{
-    font-size: 1.2em;
-  }
-  .swiper-slide .container a{
-    font-size: 1.2em;
-  }
-}
 @media (max-width: 600px){
   #MainContCruiser #hero-v{
     padding:20px;
@@ -429,23 +319,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   #MainContCruiser #hero-v .container img{
     width: 100%;
-  }
-  .swiper-slide .container{
-    margin-top: 50px;
-  }
-  .swiper-slide .container h2{
-    font-size: 1em;
-    padding: 0 10px;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  }
-  .swiper-slide .container p{
-    font-size: .7em;
-    padding: 10px;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  }
-  .swiper-slide .container a{
-    font-size: .7em;
-    padding: 10px;
   }
 }
 
@@ -1195,14 +1068,6 @@ footer #FooterLegal a:last-child{
   }
 }
 
-.fll-bg{
-  background: no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 /*--------------------------------------------------------------
 # Hero-v
 --------------------------------------------------------------*/
@@ -1271,9 +1136,6 @@ footer #FooterLegal a:last-child{
 }
 .card .content .btn button:hover{
   transform: scale(0.9);
-}
-.txt-white{
-  color: var(--white);
 }
 @media (max-width: 768px){
   .slider .card{
@@ -1549,7 +1411,169 @@ border-bottom: 2px solid #f63f57;
     font-size: .8em;
   }
   .formulario__label.text1{
-    border: 1px solid green;
+    border: 1px solid var(--green_dark);
     font-size: .9em;
   }
+}
+
+
+/*----- ----- ----- ----- ----- -----
+  General
+----- ----- ----- ----- ----- -----*/
+.fll-bg{
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.txt-white{
+  color: var(--white);
+}
+.main-button{
+  background-color: var(--yellow);
+  color: var(--black);
+  font-size: 1.5rem;
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+.hover-white:hover{
+  color: white;
+}
+
+
+@media(max-width: 600px){
+  .main-button{
+    font-size: 1rem;
+  }
+}
+
+
+/*----- ----- ----- ----- ----- -----
+  MainBanner
+----- ----- ----- ----- ----- -----*/
+#MainBanner{
+  width: 100%;
+  height: 800px;
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+#MainBanner .swiper-container, .swiper-wrapper, .swiper-slide{
+  width: 100%;
+  height: 100%;
+}
+#MainBanner .swiper-container .swiper-wrapper .swiper-slide .container{
+  height: 100%;
+  position: relative;
+}
+#MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont{
+  position: absolute;
+  width: 60%;
+  bottom: 30%;
+}
+#MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont h2 .slider-h2{
+  font-size: 3rem;
+  color: var(--black);
+}
+#MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont p .slider-p{
+  font-size: 2rem;
+  color: var(--black);
+  padding: 25px 0;
+}
+
+
+#MainBanner .swiper-container .swiper-pagination{
+  background-color: var(--white);
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+@media (max-width: 992px){
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container{
+    margin-top: 50px;
+  }
+}
+
+
+@media (max-width: 768px){
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container{
+    margin-top: 80px;
+  }
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont h2{
+    font-size: 2.2em;
+  }
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont p{
+    font-size: 1.2em;
+  }
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont a{
+    font-size: 1.2em;
+  }
+}
+
+
+@media(max-width: 600px){
+  #MainBanner{
+      height: 350px;
+  }
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container{
+    margin-top: 50px;
+  }
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont{
+    width: 100%;
+    bottom: 30%;
+    left: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont h2{
+    font-size: 1em;
+    padding: 0 10px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  }
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont p{
+    font-size: .7em;
+    padding: 10px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont a{
+      font-size: 1rem;
+      min-width: inherit;
+      padding: 10px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  #MainBanner .swiper-container .swiper-pagination{
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+#counts .container img{
+  width: 100px;
+}
+#counts .container .counters div div h1{
+  font-size: 64px;
+  font-family: Arial;
+}
+#counts .container .counters div div p{
+  font-size: 14px;
+  font-family: Arial;
 }
