@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100px;
   }
   #navbar-top{
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, 1);
   }
   .navbar-light .navbar-nav .active .nav-link {
     color: var(--green);
@@ -260,6 +260,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1px 0;
   border-radius: 7px;
   border: 1px solid var(--black);
+  margin-right: 8px;
 }
 @media(max-width: 600px){
   h1, h2, h3, h4, h5, h6 {
@@ -1533,15 +1534,15 @@ border-bottom: 2px solid #f63f57;
 }
 
 
-#MainBanner .swiper-container .swiper-pagination{
+#MainBanner .swiper-pagination{
   background-color: var(--white);
   width: 200px;
   margin: 0 auto;
   display: block;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
-  bottom: 0;
+  top: -40px;
   padding: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -1576,7 +1577,7 @@ border-bottom: 2px solid #f63f57;
       height: 350px;
   }
   #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container{
-    margin-top: 50px;
+    margin-top: 0px;
   }
   #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont{
     width: 100%;
@@ -1599,14 +1600,6 @@ border-bottom: 2px solid #f63f57;
       font-size: 1rem;
       min-width: inherit;
       padding: 10px;
-  }
-}
-
-
-@media (max-width: 425px) {
-  #MainBanner .swiper-container .swiper-pagination{
-    height: 40px;
-    font-size: 12px;
   }
 }
 
@@ -1645,7 +1638,7 @@ border-bottom: 2px solid #f63f57;
     position: relative;
 }
 
-#HomeMainContainer section#MainBanner .swiper-container .swiper-pagination{
+#HomeMainContainer section#MainBanner .swiper-pagination{
     background-color: white;
     width: 200px;
     margin: 0 auto;
@@ -1658,7 +1651,7 @@ border-bottom: 2px solid #f63f57;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-#HomeMainContainer section#MainBanner .swiper-container .swiper-pagination .swiper-pagination-bullet{
+#HomeMainContainer section#MainBanner .swiper-pagination .swiper-pagination-bullet{
     background: none;
     width: 20px;
     height: 25px;
@@ -1672,7 +1665,7 @@ border-bottom: 2px solid #f63f57;
 ---------- ---------- ----------*/
 
 section#MainBanner{
-  height: 800px;
+  height: 600px;
   background-color: rgb(235, 235, 235);
 }
 section#MainBanner .slider-infocont{
@@ -1702,28 +1695,113 @@ section#MainBanner .slider-infocont a{
   section#MainBanner{
       height: 500px;
   }
-  section#MainBanner .slider-infocont{
-      width: 100% !important;
-      bottom: 0% !important;
-      left: 0 !important;
-      height: 100%;
-      padding: 150px 20px 0 20px !important;
-      text-align: center !important;
-      box-sizing: border-box;
-      background-color: rgba(0,0,0,0.5);
+}
+
+
+section#MainBanner{
+  height: 600px;
+}
+#MainBanner #HomeSwipper .container{
+  max-width: inherit;
+  padding: 0 10%;
+}
+
+#MainBanner #HomeSwipper .slider-infocont{
+ text-align: left;
+ width: 40%;
+ bottom: 10%;
+}
+#MainBanner #HomeSwipper .slider-infocont h2{
+  font-size: 2.5rem;
+  color: white;
+}
+#MainBanner #HomeSwipper .slider-infocont p{
+  padding-bottom: 25px;
+}
+#MainBanner #HomeSwipper .slider-infocont .main-button {
+  font-size: 1rem;
+  padding: 12px 20px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+#VibrantBanner{
+  background-position-x: 70%;
+}
+#MainBanner #HomeSwipper #VibrantBanner .slider-infocont h2{
+  color: black;
+}
+#MainBanner #HomeSwipper #ChicharosBanner .slider-infocont .main-button:hover {
+  background-color: #4d3015;
+}
+#MainBanner #HomeSwipper #ChicharosBanner .slider-infocont .main-button {
+  background-color: #8f5a28;
+  color: white;
+}
+@media (max-width: 1650px) {
+  #MainBanner #HomeSwipper .container{
+    padding: 0 5%;
   }
-  section#MainBanner .slider-infocont h2{
-      font-size: 2rem;
-      color: white !important;
+}
+@media (max-width: 1194px) {
+  #MainBanner #HomeSwipper .container{
+    padding: 0 3%;
   }
-  section#MainBanner .slider-infocont p{
-      font-size: 1.5rem;
-      padding-bottom: 20px;
-      color: white;
+  #MainBanner #HomeSwipper .slider-infocont{
+    width: 30%;
+    bottom: 20%;
+   }
+   #MainBanner #HomeSwipper .slider-infocont h2{
+     font-size: 1.5rem;
+    }
+    #MainBanner #HomeSwipper .slider-infocont p{ 
+      font-size: 0.8rem;
+      padding-bottom: 5px;
+    }
+}
+@media (max-width: 909px) {
+  section#MainBanner{
+    height: 440px;
+    overflow: inherit;
+    margin: 0;
   }
-  section#MainBanner .slider-infocont a{
-      font-size: 1rem;
-      min-width: inherit;
-      padding: 16px 52px;
+  #MainBanner #HomeSwipper .container{
+    padding:0;
+    height: inherit;
+    margin: 0;
   }
+  #MainBanner .swiper-pagination{
+    top: 0;
+  }
+  #MainBanner #HomeSwipper .slider-infocont{
+    text-align: center;
+    padding:10px;
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+   }
+   #MainBanner #HomeSwipper .swiper-slide.fll-bg{
+    background-position-x: 75%;
+    background-size: 260%;
+   }
+   #MainBanner #HomeSwipper .slider-infocont h2{
+     color: white !important;
+    font-size: 1rem;
+  }
+  #MainBanner #HomeSwipper .slider-infocont p{ 
+    color: white;
+    font-size: 0.8rem;
+    padding-bottom: 3px;
+    margin: 0;
+  }
+  #MainBanner #HomeSwipper .slider-infocont .main-button br{
+    display: none;
+  }
+   #MainBanner #HomeSwipper .slider-infocont .main-button {
+     padding: 5px 10px;
+     border-radius: 5px;
+     font-size: 0.8rem;
+     font-weight: normal;
+   }
 }
