@@ -151,7 +151,7 @@ mainSyngenta.initForm = function () {
 			}
 
 
-			if (!document.getElementById('RecieveInfoFresas').checked && !document.getElementById('RecieveInfoArandanos').checked && !document.getElementById('RecieveInfoMoras').checked && !document.getElementById('RecieveInfoFrambuesas').checked && !document.getElementById('RecieveInfoOtros').checked) {
+			if (!document.getElementById('RecieveInfoPapa').checked && !document.getElementById('RecieveInfoFrijol').checked && !document.getElementById('RecieveInfoArroz').checked && !document.getElementById('RecieveInfoCereal').checked && !document.getElementById('RecieveInfoMaíz').checked) {
 				document.querySelector('#grupo__cultivo .formulario__input-error').classList.add('formulario__input-error-activo');
 				validateAll.push(false);
 			} else {
@@ -198,7 +198,7 @@ mainSyngenta.initForm = function () {
 								"usr_state": document.getElementById('SelectMxState').value,
 								"usr_local": document.getElementById('SelectMXLocal').value,
 								"usr_hectares": document.getElementById('hectares').value,
-								"accept_terms": document.getElementById('terminos').checked + ", " + document.getElementById('recieveinfo').checked,
+								"accept_terms": document.getElementById('terminos').checked,
 								"usr_farming": getFarming(),
 								"createdAt": (new Date().getTime()),
 								"action": 'put_lead'
@@ -226,10 +226,11 @@ mainSyngenta.initForm = function () {
 							document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
 						}
 					})().catch(error=>{
+						console.log(error, "Error contact");
 						sendBtn.removeAttribute('disabled');
 						document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
 						let messgErroCont = document.getElementById('formulario__merrornet')
-						messgErroCont.innerText = "Error al enviar el formulario, favor de iontentarlo más adelante.";
+						messgErroCont.innerText = "Error al enviar el formulario, favor de intentarlo más adelante.";
 						document.getElementById('formulario__merrornet').classList.add('formulario__mensaje-activo');		
 					});
 			} else {
@@ -246,20 +247,20 @@ mainSyngenta.initForm = function () {
 
 		function getFarming(){
 			let farming = "";
-			if (document.getElementById('RecieveInfoFresas').checked) {
-				farming += "Fresas ";
+			if (document.getElementById('RecieveInfoPapa').checked) {
+				farming += "Papa, ";
 			}
-			if (document.getElementById('RecieveInfoArandanos').checked) {
-				farming += "Arándanos ";
+			if (document.getElementById('RecieveInfoFrijol').checked) {
+				farming += "Frijol, ";
 			}
-			if (document.getElementById('RecieveInfoMoras').checked) {
-				farming += "Moras ";
+			if (document.getElementById('RecieveInfoArroz').checked) {
+				farming += "Arroz, ";
 			}
-			if (document.getElementById('RecieveInfoFrambuesas').checked) {
-				farming += "Frambuesas ";
+			if (document.getElementById('RecieveInfoCereal').checked) {
+				farming += "Cereal, ";
 			}
-			if (document.getElementById('RecieveInfoOtros').checked) {
-				farming += "Otros ";
+			if (document.getElementById('RecieveInfoMaíz').checked) {
+				farming += "Maíz, ";
 			}
 			return farming;
 		}

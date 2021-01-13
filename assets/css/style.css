@@ -1297,7 +1297,7 @@ padding: 20px 40px;
   font-size: 12px;
 }
 .formulario__input:focus {
-border-bottom: 2px solid var(--greenDark);
+border-bottom: 2px solid var(--green);
 outline: none
 }
 .formulario__input-error {
