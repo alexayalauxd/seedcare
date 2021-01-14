@@ -1807,10 +1807,6 @@ section#MainBanner{
    }
 }
 
-
-
-
-
 /*----- ----- ----- ----- ----- -----
   Card Swiper
 ----- ----- ----- ----- ----- -----*/
@@ -1837,6 +1833,9 @@ section#MainBanner{
 }
 .img__16{
   width: 20px;
+}
+.swiper-pagination-bullet{
+  border: none;
 }
 
 @media (max-width: 768px){
