@@ -28,6 +28,59 @@ mainSyngenta.homeSwipper = function () {
 	}
 }
 
+mainSyngenta.counterData = function(){
+	let initC = 1;
+	let counterElement = document.querySelector('.count-container');
+	if (typeof (counterElement) != 'undefined' && counterElement != null) {
+		function initCounters(){
+			let allTimers = document.getElementsByClassName('timer');
+			for (let index = 0; index < allTimers.length; index++) {
+				const tmrItem = allTimers[index];
+				const realNumItem = tmrItem.getAttribute("data-timer"); 
+				const rndNum = getRandomNum(realNumItem);
+				let startConunt = 0;
+				tmrItem.innerHTML = 0;
+				for (let rnInx = 0; rnInx < rndNum.length; rnInx++) {
+					const currentRandmNum = rndNum[rnInx];
+					setTimeout(function(){
+						tmrItem.innerHTML = currentRandmNum;
+					}, startConunt);
+					startConunt += 100
+				}
+			}
+		}
+	
+		function getRandomNum(lastNum){
+			let myRanNums = []
+			for (let index = 0; index < 10; index++) {
+				let rnd = Math.floor(Math.random() * Math.floor(20));
+				myRanNums.push(rnd);
+			}
+			myRanNums.push(lastNum);
+			return myRanNums;
+		}
+	
+		function isInViewport(element) {
+			const rect = element.getBoundingClientRect();
+			return (
+				rect.top >= 0 &&
+				rect.left >= 0 &&
+				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+			);
+		};
+		const countsBox = document.querySelector('.count-container');
+		document.addEventListener('scroll', function () {
+			if(isInViewport(countsBox) && initC){
+				initC = 0;
+				initCounters();
+			}
+		}, {
+			passive: true
+		});
+	}
+}
+
 
 mainSyngenta.initForm = function () {
 	let getForm = document.getElementById('formulario');
@@ -44,9 +97,9 @@ mainSyngenta.initForm = function () {
 		function fillStates() {
 			selectSate.addEventListener('change', x => {
 				if (selectSate.options[0].value == "Selecciona un estado") {
-					selectLocal.removeAttribute('disabled');
 					selectSate.options[0] = null;
 				}
+				selectLocal.removeAttribute('disabled');
 				document.getElementById('grupo__state').classList.remove('formulario__grupo-incorrecto');
 				document.querySelector('#grupo__state .formulario__input-error').classList.remove('formulario__input-error-activo');
 				changeState(x.target.value);
@@ -74,12 +127,6 @@ mainSyngenta.initForm = function () {
 		function emptyElement(elem) {
 			elem.innerHTML = '';
 		}
-
-
-
-
-
-
 
 		// Validaciones
 
@@ -198,7 +245,7 @@ mainSyngenta.initForm = function () {
 								"usr_state": document.getElementById('SelectMxState').value,
 								"usr_local": document.getElementById('SelectMXLocal').value,
 								"usr_hectares": document.getElementById('hectares').value,
-								"accept_terms": document.getElementById('terminos').checked,
+								"accept_terms": document.getElementById('terminos').checked + ", "+ document.getElementById('recieveinfo').checked,
 								"usr_farming": getFarming(),
 								"createdAt": (new Date().getTime()),
 								"action": 'put_lead'
@@ -334,7 +381,7 @@ mainSyngenta.admininit = function(){
 						method: 'POST',
 						body: JSON.stringify({ 
 							"ub_psd": sessionStorage.getItem('ad_869_KLH9_s'),
-							"campaign": 'berries',
+							"campaign": 'seedcare',
 							"from_data": (new Date(fromData.value).getTime()),
 							"to_data": (new Date(toData.value).getTime()),
 							"action": 'get_leads'
@@ -434,4 +481,5 @@ window.onload = function () {
 	mainSyngenta.initForm();
 	mainSyngenta.initThankfull();
 	mainSyngenta.admininit();
+	mainSyngenta.counterData();
 }

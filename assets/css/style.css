@@ -314,6 +314,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 600px){
   #MainContCruiser #hero-v{
     padding:20px;
+    margin-top: 50px;
   }
   #MainContCruiser #hero-v .cont{
     margin-top: 38%;
@@ -381,7 +382,7 @@ section {
 }
 
 .services .icon-box img{
-  max-width: 100px;
+  max-width: 45px;
 }
 .services .icon-box .icon {
   width: 75px;
@@ -651,7 +652,7 @@ section {
   height: 0;
   padding: 0;
   padding-bottom: 50%;
-  background-image: url(../images/institute/logo_cruiser.png);
+  background-image: url(../../assets/images/cruiser/logo_cruiser.png);
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -1619,7 +1620,21 @@ border-bottom: 2px solid #f63f57;
   font-size: 14px;
   font-family: Arial;
 }
-
+.main-home #counts{
+  padding: 30px 0;
+}
+.main-home #counts .p-2 img{
+  width: 35px;
+}
+.main-home #counts .container .counters div div h1{
+  font-size: 3rem;
+  width: 55px;
+}
+.main-home #counts .main-button{
+  background-color: #8f5a28;
+  color: white;
+  margin-top: 20px;
+}
 
 #HomeMainContainer section,
 #TecnicosContainer section
@@ -1831,6 +1846,9 @@ section#MainBanner{
 .swiper__icon{
   margin-right: 5px;
 }
+.img__14{
+  width: 14px;
+}
 .img__16{
   width: 20px;
 }
@@ -1848,3 +1866,54 @@ section#MainBanner{
     align-items: center;
   }
 }
+
+#CrusierSwipper{
+  padding-bottom: 50px;
+}
+#CrusierSwipper .swiper-slide .swiper__btn{
+  font-size: 12px;
+}
+#CrusierSwipper .swiper-slide .content p{
+  font-size: 14px;
+  min-height: 100px;
+}
+
+#CrusierSwipper .swiper-slide .mb-4{
+  max-width: 150px;
+  margin: 0 auto;
+}
+#CrusierSwipper .swiper-slide{
+  padding: 40px;
+}
+
+.cruiser-video{
+  padding: 0;
+}
+
+.cruiser-video .btn-videodesktop{
+  display: block;
+}
+
+.cruiser-video .btn-videomobile{
+  display: none;
+}
+#vibrance img{
+  width: 50%;
+}
+@media (max-width: 768px){
+  .cruiser-video .btn-videodesktop{
+    display: none;
+  }
+  
+  .cruiser-video .btn-videomobile{
+    display: block;
+  }
+  #vibrance img{
+    width: 80%;
+  }
+}
+
+.bg-white{
+  background-color: white;
+}
+
