@@ -1911,6 +1911,9 @@ section#MainBanner{
   #vibrance img{
     width: 80%;
   }
+  .main-home #counts .container .counters div div h1{
+    padding: 0;
+  }
 }
 
 .bg-white{

@@ -32,8 +32,9 @@ mainSyngenta.counterData = function(){
 	let initC = 1;
 	let counterElement = document.querySelector('.count-container');
 	if (typeof (counterElement) != 'undefined' && counterElement != null) {
-		function initCounters(){
-			let allTimers = document.getElementsByClassName('timer');
+		
+		function initCounters(totalElems){
+			let allTimers = totalElems;
 			for (let index = 0; index < allTimers.length; index++) {
 				const tmrItem = allTimers[index];
 				const realNumItem = tmrItem.getAttribute("data-timer"); 
@@ -47,6 +48,7 @@ mainSyngenta.counterData = function(){
 					}, startConunt);
 					startConunt += 100
 				}
+				
 			}
 		}
 	
@@ -70,14 +72,21 @@ mainSyngenta.counterData = function(){
 			);
 		};
 		const countsBox = document.querySelector('.count-container');
-		document.addEventListener('scroll', function () {
-			if(isInViewport(countsBox) && initC){
-				initC = 0;
-				initCounters();
+		let timersElems = document.getElementsByClassName('timer');
+		if(window.innerWidth > 600){
+			for (let index = 0; index < timersElems.length; index++) {
+				const tmr = timersElems[index];
+				tmr.innerHTML = 0;
 			}
-		}, {
-			passive: true
-		});
+			document.addEventListener('scroll', function () {
+				if(isInViewport(countsBox) && initC){
+					initC = 0;
+					initCounters(timersElems);
+				}
+			}, {
+				passive: true
+			});
+		}
 	}
 }
 
