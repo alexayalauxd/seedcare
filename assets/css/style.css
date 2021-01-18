@@ -1242,6 +1242,10 @@ padding: 20px 40px;
     padding: .5em;
     width: 100px;
   }
+  .main-home #counts .container .counters .item-counter{
+    text-align: left !important;
+    justify-content: left !important;
+  }
 }
 
 
@@ -1874,12 +1878,12 @@ section#MainBanner{
   font-size: 12px;
 }
 #CrusierSwipper .swiper-slide .content p{
-  font-size: 14px;
-  min-height: 100px;
+  font-size: 21px;
+  min-height: 160px;
 }
 
 #CrusierSwipper .swiper-slide .mb-4{
-  max-width: 150px;
+  max-width: 200px;
   margin: 0 auto;
 }
 #CrusierSwipper .swiper-slide{

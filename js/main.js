@@ -342,7 +342,7 @@ mainSyngenta.initThankfull = function(){
 
 mainSyngenta.admininit = function(){
 	if (typeof (AdminSect) != 'undefined' && AdminSect != null) {
-		sessionStorage.removeItem("ad_869_KLH9_s");
+		sessionStorage.removeItem("s33_2021_Ur-pp");
 		const accessForm = document.getElementById('FormAccess');
 		const requestDataForm = document.getElementById('FormDownloadDatabase');
 
@@ -367,7 +367,7 @@ mainSyngenta.admininit = function(){
 						})
 					});
 					const acc_response = await rawResponse.json();
-					sessionStorage.setItem("ad_869_KLH9_s", 'YTC956-SynG3nt42020._');
+					sessionStorage.setItem("s33_2021_Ur-pp", 'YTC956-SynG3nt42020._');
 					startGetDatatbase();
 					
 				})().catch(error=>{
@@ -389,7 +389,7 @@ mainSyngenta.admininit = function(){
 					const rawResponse = await fetch('https://2o62j44a44.execute-api.us-east-1.amazonaws.com/dev/lead', {
 						method: 'POST',
 						body: JSON.stringify({ 
-							"ub_psd": sessionStorage.getItem('ad_869_KLH9_s'),
+							"ub_psd": sessionStorage.getItem('s33_2021_Ur-pp'),
 							"campaign": 'seedcare',
 							"from_data": (new Date(fromData.value).getTime()),
 							"to_data": (new Date(toData.value).getTime()),
@@ -427,7 +427,7 @@ function createExcel(excel_data, fromDate, toDate){
 	sheet.properties.defaultRowHeight = 15;
 	sheet.pageSetup.verticalCentered = true;
 	
-	let headers = ['id', 'Nombre', 'Apellido(s)', 'Email', 'Ocupación', 'Teléfono', 'Estado', 'Municipio', 'No. de Hectareas', 'Tipo de Cultivo', 'Fecha', 'Acepto Términos', 'Campaña'];
+	let headers = ['id', 'Nombre', 'Apellido(s)', 'Email', 'Ocupación', 'Teléfono', 'Estado', 'Municipio', 'No. de Hectareas', 'Tipo de Cultivo', 'Fecha', 'Acepto Términos/Deseo Recibir info.', 'Campaña'];
 	sheet.addRow(headers);
 	
 	excel_data.forEach( usrData => {
