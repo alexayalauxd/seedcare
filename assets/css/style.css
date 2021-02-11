@@ -1567,6 +1567,12 @@ border-bottom: 2px solid #f63f57;
   width: 60%;
   bottom: 30%;
 }
+#MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont2{
+  position: absolute;
+  width: 60%;
+  bottom: 10%;
+  left: 50%;
+}
 #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont h2 .slider-h2{
   font-size: 3rem;
   color: var(--black);
@@ -1599,6 +1605,14 @@ border-bottom: 2px solid #f63f57;
   }
 }
 
+@media (max-width: 909px){
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont2{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
 
 @media (max-width: 768px){
   #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container{
@@ -1612,6 +1626,9 @@ border-bottom: 2px solid #f63f57;
   }
   #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont a{
     font-size: 1.2em;
+  }
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont2{
+    bottom: 10%;
   }
 }
 
@@ -1644,6 +1661,15 @@ border-bottom: 2px solid #f63f57;
       font-size: 1rem;
       min-width: inherit;
       padding: 10px;
+  }
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont2{
+    bottom: 15%;
+  }
+}
+
+@media(max-width: 425px){
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont2{
+    bottom: 20%;
   }
 }
 
@@ -1984,4 +2010,16 @@ section#MainBanner{
 }
 .center h4{
   color: var(--green_dark);
+}
+#VibranceBanner{
+  background-position-x: 80%;
+  background-image: url('../images/main/banner2.png');
+}
+.logo-center{
+  display: none;
+}
+
+.logo_hero{
+  width: 40%;
+  margin-top: 15px;
 }
