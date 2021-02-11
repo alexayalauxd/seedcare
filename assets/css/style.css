@@ -668,10 +668,11 @@ background: #f2f2f2;
   height: 0;
   padding: 0;
   padding-bottom: 50%;
-  background-image: url(../images/lgVibrance.png);
+  background-image: url(../images/vibrance/logo_vibrance_beans.png);
   background-position: center center;
-  background-size: 100%;
+  background-size: 80%;
   background-repeat: no-repeat;
+
 }
 .fll-all_6{
   height: 0;

@@ -15,6 +15,7 @@ mainSyngenta.homeSwipper = function () {
 			autoplay: {
 				delay: 3000,
 			},
+			allowTouchMove: false,
 			effect: 'fade',
 			loop: true,
 			pagination: {
