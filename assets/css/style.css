@@ -652,7 +652,7 @@ section {
   height: 0;
   padding: 0;
   padding-bottom: 50%;
-  background-image: url(../../assets/images/cruiser/logo_cruiser.png);
+  background-image: url(../../assets/images/cruiser/bean\ copy.png);
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -662,6 +662,15 @@ section {
   padding: 0;
   padding-bottom: 50%;
   background-image: url(../images/lgVibrance.png);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.fll-all_6{
+  height: 0;
+  padding: 0;
+  padding-bottom: 50%;
+  background-image: url(../images/lgFortenza.png);
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -776,6 +785,14 @@ section {
 --------------------------------------------------------------*/
 #title-line {
   background-color: #005dab;
+  color: white;
+}
+#title-line-orange {
+  background-color: #f15f22;
+  color: white;
+}
+#title-line-green {
+  background-color: #00833d;
   color: white;
 }
 
