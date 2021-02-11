@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 600px){
   #MainContCruiser #hero-v{
-    padding:20px;
+    padding: 0 0 20px 0;
     margin-top: 50px;
   }
   #MainContCruiser #hero-v .cont{
@@ -593,12 +593,15 @@ section {
   font-weight: bold;
 }
 #MainContCruiser #counts .item-croiser{
-  border: 15px solid rgb(209, 209, 209);
-  border-radius: 20px;
-  width: 80%;
-  margin: 0 auto 20px;
-  flex: inherit;
-  padding: 20px;
+  border-radius: 5px;
+width: 90%;
+margin: 0 auto 20px;
+flex: inherit;
+padding: 20px;
+background: #f2f2f2;
+}
+#MainContCruiser #counts .container img{
+  width: 100%;
 }
 #counts p{
   font-size: .8em;
@@ -865,12 +868,14 @@ section {
   font-weight: 700;
   line-height: 64px;
   color: #fff;
+  text-shadow: 0 1px 3px black;
 }
 
 #video h2 {
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
   margin: 10px 0 0 0;
   font-size: 20px;
+  text-shadow: 0 1px 3px black;
 }
 
 #video .btn-get-started {
@@ -1038,6 +1043,13 @@ section {
 
 #SpamMainContainer .img-cont img{
   width: 100%;
+}
+#SpamMainContainer .btn-secondary{
+  width: 100%;
+  font-size: 13px;
+}
+#SpamMainContainer .fll-all_4{
+  background-size: 70%;
 }
 /*--------------------------------------------------------------
 # News Section
@@ -1566,12 +1578,14 @@ border-bottom: 2px solid #f63f57;
   position: absolute;
   width: 60%;
   bottom: 30%;
+  z-index: 1;
 }
 #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont2{
   position: absolute;
-  width: 60%;
-  bottom: 10%;
-  left: 50%;
+  width: 45%;
+  min-width: 650px;
+  top: 10%;
+  right: 0%;
 }
 #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont h2 .slider-h2{
   font-size: 3rem;
@@ -1608,8 +1622,7 @@ border-bottom: 2px solid #f63f57;
 @media (max-width: 909px){
   #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont2{
     width: 100%;
-    bottom: 0;
-    left: 0;
+    top: 0;
   }
 }
 
@@ -1626,6 +1639,9 @@ border-bottom: 2px solid #f63f57;
   }
   #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont a{
     font-size: 1.2em;
+  }
+  #MainBanner .swiper-container .swiper-wrapper .swiper-slide#CruiserBanner{
+    background-position-x: 68%;
   }
   #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont2{
     bottom: 10%;
@@ -1663,13 +1679,9 @@ border-bottom: 2px solid #f63f57;
       padding: 10px;
   }
   #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont2{
-    bottom: 15%;
-  }
-}
-
-@media(max-width: 425px){
-  #MainBanner .swiper-container .swiper-wrapper .swiper-slide .container .slider-infocont2{
-    bottom: 20%;
+    top: 3%;
+    max-width: inherit;
+    right: -20%;
   }
 }
 
@@ -1866,10 +1878,6 @@ section#MainBanner{
     left: 0;
     bottom: 0px;
    }
-   #MainBanner #HomeSwipper .swiper-slide.fll-bg{
-    background-position-x: 75%;
-    background-size: 260%;
-   }
    #MainBanner #HomeSwipper .slider-infocont h2{
      color: white !important;
     font-size: 1rem;
@@ -1966,8 +1974,10 @@ section#MainBanner{
 .cruiser-video .btn-videomobile{
   display: none;
 }
-#vibrance img{
+#Vibrance .logo_hero,
+#Fortenza .logo_hero{
   width: 50%;
+  max-width: 300px;
 }
 @media (max-width: 768px){
   .cruiser-video .btn-videodesktop{
