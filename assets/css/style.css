@@ -593,12 +593,12 @@ section {
   font-weight: bold;
 }
 #MainContCruiser #counts .item-croiser{
-  border-radius: 5px;
-width: 90%;
-margin: 0 auto 20px;
-flex: inherit;
-padding: 20px;
-background: #f2f2f2;
+  border-radius: 25px;
+  width: 90%;
+  margin: 0 auto 20px;
+  flex: inherit;
+  padding: 20px;
+  background: #f2f2f2;
 }
 #MainContCruiser #counts .container img{
   width: 100%;
@@ -674,14 +674,17 @@ background: #f2f2f2;
   background-repeat: no-repeat;
 
 }
-.fll-all_6{
+.fll-all_6, .fll-all_6_5{
   height: 0;
   padding: 0;
   padding-bottom: 50%;
   background-image: url(../images/lgFortenza.png);
   background-position: center center;
-  background-size: 100%;
+  background-size: 90%;
   background-repeat: no-repeat;
+}
+.fll-all_6_5{
+  background-image: url(../images/fortenza-duo-logo.jpg);
 }
 .fll-all_7{
   height: 0;
@@ -692,7 +695,7 @@ background: #f2f2f2;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.fll-all_8{
+.fll-all_8,.fll-all_9{
   height: 0;
   padding: 0;
   padding-bottom: 50%;
@@ -700,6 +703,9 @@ background: #f2f2f2;
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+.fll-all_9{
+  background-image: url(../images/fortenza-duo-circuit.jpg);
 }
 #counts .container img{
   width: 200px;
@@ -728,7 +734,7 @@ background: #f2f2f2;
 }
 
 @media (max-width: 768px){
-  .fll-all, .fll-all_2, .fll-all_3, .fll-all_7, .fll-all_8{
+  .fll-all, .fll-all_2, .fll-all_3, .fll-all_7, .fll-all_8, .fll-all_9{
     background-image: none;
   }
   #main #know{
@@ -812,14 +818,22 @@ background: #f2f2f2;
 #title-line {
   background-color: #005dab;
   color: white;
+  font-size: 22px;
 }
 #title-line-orange {
   background-color: #f15f22;
   color: white;
+  font-size: 22px;
 }
 #title-line-green {
   background-color: #00833d;
   color: white;
+  font-size: 22px;
+}
+#title-line-brown {
+  background-color: #8f5a28;
+  color: white;
+  font-size: 22px;
 }
 
 /*--------------------------------------------------------------
@@ -1026,6 +1040,10 @@ background: #f2f2f2;
 /*--------------------------------------------------------------
 # Spam Section
 --------------------------------------------------------------*/
+
+#SpamMainContainer .div1{
+  padding-top: 40px;
+}
 #SpamMainContainer .div1 .icon{
   font-size: 32px;
   padding: 20px;
@@ -1051,6 +1069,9 @@ background: #f2f2f2;
 }
 #SpamMainContainer .fll-all_4{
   background-size: 70%;
+}
+#SpamMainContainer .media-body p{
+  font-size: 20px;
 }
 /*--------------------------------------------------------------
 # News Section
@@ -1945,8 +1966,17 @@ section#MainBanner{
   }
 }
 
+.crusier-swipper-section{
+  background-color: white;
+  padding: 0;
+}
+
 #CrusierSwipper{
   padding-bottom: 50px;
+}
+#CrusierSwipper .swiper-slide{
+  background: #eeeeee;
+  border-radius: 10px;
 }
 #CrusierSwipper .swiper-slide .swiper__btn{
   font-size: 12px;
@@ -1976,13 +2006,21 @@ section#MainBanner{
   display: none;
 }
 #Vibrance .logo_hero,
-#Fortenza .logo_hero{
+#Fortenza .logo_hero,
+#FortenzaDuo .logo_hero{
   width: 50%;
   max-width: 300px;
 }
 @media (max-width: 768px){
   .cruiser-video .btn-videodesktop{
     display: none;
+  }
+
+  #Vibrance .logo_hero,
+  #Fortenza .logo_hero,
+  #FortenzaDuo .logo_hero{
+    width: 90%;
+    max-width: inherit;
   }
   
   .cruiser-video .btn-videomobile{
@@ -2033,4 +2071,28 @@ section#MainBanner{
 .logo_hero{
   width: 40%;
   margin-top: 15px;
+}
+
+#MainVibrance{
+  background: white;
+}
+#ContactBannerPortafolio p{
+  color: white;
+  font-size: 25px;
+}
+#ContactBannerPortafolio a:hover{
+  background: rgba(0, 0, 0, 0.3);
+}
+#ContactBannerPortafolio a{
+  min-width: 200px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  background: none;
+  border:2px solid white;
+  display: block;
+  width: 45%;
+  padding:20px 0;
+  text-align: center;
+  margin: 0 auto;
 }
