@@ -35,17 +35,22 @@
   <!-- ======= Header ======= -->
   <nav id="navbar-top" class="navbar fixed-top navbar-expand-md navbar-light p-4">
     <a class="logo_1"><img class="img_1" src="./assets/images/main/logo_green.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav m-auto mt-2 mt-lg-0 text-center">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">INICIO</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portafolio.html">PORTAFOLIO</a>
+        <li class="nav-item dropdown">
+          <a id="dropdown01" class="nav-link dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">PORTAFOLIO</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdown01" data-bs-popper="none">
+            <li><a class="dropdown-item" href="portafolio-mx.html">México</a></li>
+            <li><a class="dropdown-item" href="portafolio-cac.html">Centroamérica y Caribe</a></li>
+            <li><a class="dropdown-item" href="portafolio-andinos.html">Andinos</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="institute.html">THE SEEDCARE INSTITUTE</a>
@@ -66,6 +71,22 @@
   <section id="MainBanner">
     <div id="HomeSwipper" class="swiper-container">
       <div class="swiper-wrapper">
+        <div id="FortenzaMaxBanner" class="swiper-slide fll-bg" style="background-image: url(assets/images/main/banner4.jpg);">
+          <div class="container">
+            <div class="slider-infocont">
+              <a href="portafolio-cac.html">
+                <img src="assets/images/main/banner4_1.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="OrgulloFrijoleroBanner" class="swiper-slide fll-bg" style="background-image: url(assets/images/main/banner5.jpg);">
+          <div class="container">
+            <div class="slider-infocont">
+              <img src="assets/images/main/banner5_1.png" alt="">
+            </div>
+          </div>
+        </div>
         <div id="CruiserBanner" class="swiper-slide fll-bg" style="background-image: url(assets/images/main/banner1.png);">
           <div class="container">
             <div class="slider-infocont">
@@ -113,7 +134,7 @@
       <div class="container">
 
         <div class="mx-auto text-center">
-          <h1>Tecnología e investigación global para los cultivos mexicanos</h2>
+          <h1>Tecnología e investigación a nivel global para cultivos de todo Latinoamérica.</h1>
             <br>
             <h5>En el Seedcare Institute™ de México, ubicado en Jalisco, nos encargamos de garantizar las aplicaciones y
               servicios de alta calidad para la protección de las semillas y vamos más allá:</h5>
